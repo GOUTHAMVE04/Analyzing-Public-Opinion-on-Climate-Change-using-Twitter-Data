@@ -10,7 +10,7 @@ This project aims to classify tweets into categories (**Pro, Anti, Neutral, News
 ## 📖 Project Description  
 This project uses a labeled Twitter dataset related to climate change to perform:  
 - Exploratory Data Analysis (EDA)  
-- Data Preprocessing  
+- Data Preprocessing and Cleaning  
 - Sentiment Classification  
 
 Machine learning techniques are applied to understand how climate change is discussed on social media, which can help policymakers, researchers, and organizations design better awareness campaigns and strategies.  
@@ -26,14 +26,19 @@ Machine learning techniques are applied to understand how climate change is disc
 - Pandas, NumPy  
 - Scikit-learn  
 - Matplotlib, Seaborn  
+- WordCloud  
 
 ## 🚀 Weekly Progress  
 - ✅ Week 1: Data loading & understanding  
-- ⏳ Week 2: Data cleaning & preprocessing  
+- ✅ Week 2: Data cleaning, text preprocessing & feature selection  
 - ⏳ Week 3: Model building & training  
 - ⏳ Week 4: Evaluation, visualization & final report  
+
+## 📂 Files  
+- `twitter_sentiment_data.csv` – Original dataset  
+- `transformed_twitter_sentiment.csv` – Preprocessed dataset after Week 2  
 
 ## 📌 How to Run  
 Clone this repo:  
 ```bash
-git clone https://github.com/your-username/climate-change-sentiment.git
+git clone https://github.com/GOUTHAMVE04/Analyzing-Public-Opinion-on-Climate-Change-using-Twitter-Data.git
