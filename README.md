@@ -1,44 +1,45 @@
-# 🌍 Climate Change Sentiment Analysis  
+# 🌍 Climate Change Sentiment Analysis
 
 ## 📌 Project Title  
-**Analyzing Public Opinion on Climate Change using Twitter Data**  
+**Analyzing Public Opinion on Climate Change using Twitter Data**
 
 ## 📝 Problem Statement  
-Climate change is one of the most pressing global issues, but public opinion on the topic varies widely.  
-This project aims to classify tweets into categories (**Pro, Anti, Neutral, News**) to analyze sentiment trends and better understand how people perceive climate risks and disaster management.  
+Climate change is a global challenge that affects ecosystems, economies, and human health. Understanding public perception is essential for designing effective awareness campaigns and policy-making. This project uses Twitter data to classify tweets into categories like Pro, Anti, Neutral, and News to gain insights into public sentiment about climate change.
 
-## 📖 Project Description  
-This project uses a labeled Twitter dataset related to climate change to perform:  
-- Exploratory Data Analysis (EDA)  
-- Data Preprocessing and Cleaning  
-- Sentiment Classification  
+## ✅ How I Solved It  
 
-Machine learning techniques are applied to understand how climate change is discussed on social media, which can help policymakers, researchers, and organizations design better awareness campaigns and strategies.  
+### Week 1 – Data Loading & Understanding  
+- Loaded and explored the dataset using Pandas.  
+- Checked for missing values and summarized statistics to understand the structure of the data.
 
-## 📂 Dataset  
-- **Source:** Kaggle – Climate Change Twitter Dataset  
-- **Size:** ~43,943 annotated tweets  
-- **Columns:** `tweetid`, `message`, `sentiment`  
+### Week 2 – Univariate Analysis & Data Transformation  
+- Performed distribution analysis on sentiment labels and message lengths.  
+- Cleaned text data and created visualizations like word clouds to understand the context of tweets.
 
-## ⚙️ Tech Stack  
-- Python 🐍  
-- Jupyter Notebook  
-- Pandas, NumPy  
-- Scikit-learn  
-- Matplotlib, Seaborn  
-- WordCloud  
+### Week 3 – Bivariate Analysis, Model Training & Evaluation  
+- Explored relationships between sentiment and message length using boxplots and correlation matrices.  
+- Trained Random Forest and Logistic Regression models.  
+- Fine-tuned the Random Forest using Grid Search to achieve better accuracy and F1 scores.
 
-## 🚀 Weekly Progress  
-- ✅ Week 1: Data loading & understanding  
-- ✅ Week 2: Data cleaning, text preprocessing & feature selection  
-- ⏳ Week 3: Model building & training  
-- ⏳ Week 4: Evaluation, visualization & final report  
+## ✅ Achieved Results  
+- **Accuracy:** 0.679  
+- **Precision:** 0.690  
+- **Recall:** 0.679  
+- **F1 Score:** 0.652  
 
-## 📂 Files  
-- `twitter_sentiment_data.csv` – Original dataset  
-- `transformed_twitter_sentiment.csv` – Preprocessed dataset after Week 2  
+The model classifies climate change-related tweets into sentiment categories with good performance, especially in recognizing positive sentiments.
 
-## 📌 How to Run  
-Clone this repo:  
-```bash
-git clone https://github.com/GOUTHAMVE04/Analyzing-Public-Opinion-on-Climate-Change-using-Twitter-Data.git
+## 📥 Pre-trained Model  
+Since the trained model file is large, it is hosted on Google Drive. Please download it from the link below and place it in the `./sample_data/` directory before running the project.
+
+➡️ [Download random_forest_model.pkl](https://drive.google.com/file/d/1hUovNSE0_SDoXGGPkXRdZaLsOhPOI4t4/view?usp=sharing)
+
+**Instructions:**  
+1. Download `random_forest_model.pkl` from the above link.  
+2. Place it inside the `./sample_data/` folder of the cloned repository.
+
+## ✅ How Others Can Use This Model  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/GOUTHAMVE04/Analyzing-Public-Opinion-on-Climate-Change-using-Twitter-Data.git
+   cd Analyzing-Public-Opinion-on-Climate-Change-using-Twitter-Data
